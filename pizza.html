@@ -1,0 +1,146 @@
+<!DOCTYPE html> <!--This is an html5 document-->
+<html>
+    <head>
+        <title>Satch's Pizzeria</title> <!--Name of Pizzeria-->
+        <!--<link href="css/pizza.css" type="text/css" rel="stylesheet" />-->
+    </head>
+    <body>
+        <div class="header">
+            <img id="satch" class="satch" src="images/satchelpaige.jpg">
+            <h1 class="col1of3" id="top">Welcome to Satch's Pizzeria's Online Site!</h1>
+            <h2 class="logo">Where Nobody Tops Our Toppings!</h2>
+            <div class="login">
+                <form class="col2of3" action="http://www.example.com/login" 
+                    method="post"> <!--login info-->
+                    <div class="username">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username"
+                        required="required" /><br>
+                    </div>
+                    <div clas="password">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password"
+                        required="required" />
+                    </div>
+                    <input class="col3of3" type="submit" value="Submit" />
+                </form> 
+                <h2 class="header2">Home of the World Famous Pizzaburger!</h2>
+                <a href="#order">Order now!</a>
+        </div>
+
+        <div class="images" > <!--images-->
+            <img id="img1" src="images/pizza1.jpg"  alt="pepperoni" title="pepperoni">
+            <img id="img2" src="images/pizza2.jpg"  alt="pepperoni and peppers" title="pepperoni and peppers">       
+            <img id="img3" src="images/pizzaburger.jpg"  alt="pizzaburger" title="Home of the Pizzaburger!">
+        </div>
+       <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j696bHtrYTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        
+        <div class="quotes">
+            <blockquote>"I had Larry's-airquote-Awesome Pizza after I had Satch's. I threw that slop up just so I could put that pizza where it belongs...the trash!!" - Tazz</blockquote>
+            <br>
+            <blockquote>"Satch's Pizza is so good, I stole a slice from a 2-year old" - Keke</blockquote>
+            <br>
+            <blockquote>"Every time I go to Satch's Pizzeria, I sit in the same seat, order a pizzaburger, and eat it with my shirt off." - S.Wolcott</blockquote>
+        </div>
+        <hr>
+        <div class="table">
+            <table> <!--pricing table-->
+                <tr>
+                    <th scope="col">Size</th>
+                    <th scope="col">1-toppings</th>
+                    <th scope="col">2-toppings</th>
+                    <th scope="col">3-toppings</th>
+                    <th scope="col">4+ toppings</th>
+                </tr>
+                <tr class="even">
+                    <th scope="col">Small</th>
+                    <th scope="col">$4.99</th>
+                    <th scope="col">$6.99</th>
+                    <th scope="col">$7.99</th>
+                    <th scope="col">$8.99</th>
+                </tr>
+                <tr>
+                    <th scope="col">Medium</th>
+                    <th scope="col">$6.99</th>
+                    <th scope="col">$8.99</th>
+                    <th scope="col">$9.99</th>
+                    <th scope="col">$10.99</th>
+                </tr>
+                <tr class="even">
+                    <th scope="col">Large</th>
+                    <th scope="col">$8.99</th>
+                    <th scope="col">$9.99</th>
+                    <th scope="col">$11.99</th>
+                    <th scope="col">$13.99</th>
+                </tr>
+                <tr>
+                    <th scope="col">XL</th>
+                    <th scope="col">$12.99</th>
+                    <th scope="col">$14.99</th>
+                    <th scope="col">$16.99</th>
+                    <th scope="col">$18.99</th>
+                </tr>
+                <tr class="even">
+                    <th scope="col">Pizzaburger</th>
+                    <th colspan="4">$15.99!!</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form">
+            <form id="order" action="http://www.example.com/profile.php"> <!--delivery or carryout-->
+                <p>Delivery or Carryout?
+                    <br>
+                    <input type="radio" name="option" value="delivery"
+                        checked="checked" /> Delivery
+                    <input type="radio" name="option" value="carryout" />
+                    Carryout</p>
+                <h3>What size pizza do you want?</h3>
+                <select name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra large">Extra Large</option>
+                    <option value="pizzaburger">Pizzaburger</option>
+                </select>
+                <h3>Choose your toppings:</h3>
+                <select name="toppings" size="5"
+                    multiple="multiple">
+                    <option value="pepperoni" selected="selected">Pepperoni</option>
+                    <option value="beef">Beef</option>
+                    <option value="sausage">Sausage</option>
+                    <option value="ham">Ham</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="tomato">Tomatoes</option>
+                    <option value="onion">Onions</option>
+                    <option value="red peppers">Red Peppers</option>
+                    <option value="green peppers">Green Peppers</option>
+                    <option value="spinach">Spinach</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="olive">Olive</option>
+                    <option value="feta">Feta Cheese</option>
+                    <option value="Bacon">Bacon</option>
+                </select>             
+                <h3>Special Instructions</h3>
+                <textarea name="instructions" cols="80" rows="8">Special Instructions...</textarea>       
+            </form>
+        </div>
+        <div class="field">
+            <fieldset>
+                <legend>Delivery Info</legend>
+                <label>Name:<br>
+                <input type="text" name="name"/></label><br>
+                <label>Address:<br>
+                <input type="text" name="address"/></label><br>
+                <label>Zip Code:<br>
+                <input type="text" name="zip"/></label>
+            </fieldset>
+            <input type="submit" value="submit" />
+        </div>
+        
+        <a href="#top">Back To The Top</a> <!--link to the top of the page-->
+    </body>
+</html>
