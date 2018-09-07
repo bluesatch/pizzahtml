@@ -4,6 +4,18 @@ body {
    
 }
 
+.nav-bar {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    background-color: #000080;
+    color: #ffd700;
+}
+
+.form {
+    display: inline;
+}
+
 .satch {
     position: static;;
     opacity: 0.75;
@@ -15,25 +27,7 @@ body {
     height: 175px;
     border: 2px solid #000080;
 }
-.col1of3 {
-    float: left;
-    width: 600px;
-    margin: 10px;
-}
-
-/*.col2of3 {
-    float: right;
-    margin: 10px;
-} */
-
-.col2of3 {
-    text-align: right;
-    
-}
-
-
-.col3of3 {
-   text-align: right;
+.
 }
 
 
